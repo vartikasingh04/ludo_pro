@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo</title>
+    <style>
+#outer{
+    height:750px;
+    width:750px;
+    border:1px solid;
+    margin:0px auto;  
+}
+#top{
+    height:298px;
+    width:750px;
+    border:1px solid;
+}
+#mid{
+    height:150px;
+    width:750px;
+    border:1px solid;
+}
+#bottom{
+    height:298px;
+    width:750px;
+    border:1px solid;
+}
+#green{
+    height:298px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+    background-color: green;
+}
+#yellowline{
+    height:298px;
+    width: 148px;
+    border:1px solid;
+    float: left;
+}
+#yellow{
+    height:298px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+    background-color: yellow;
+}
+#greenline{
+    height:148px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+}
+#trianglebox{
+    height:0px;
+    width: 0px;
+    border:1px solid;
+    float: left;
+    border-top: 75px solid yellow;
+    border-left: 75px solid green;
+    border-right: 75px solid blue;
+    border-bottom: 76px solid red;
+}
+#blueline{
+    height:148px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+}
+#red{
+    height:298px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+    background-color: red;
+}
+#redline{
+    height:298px;
+    width: 148px;
+    border:1px solid;
+    float: left;
+}
+#blue{
+    height:298px;
+    width: 298px;
+    border:1px solid;
+    float: left;
+    background-color: blue;
+}
+#tc1{
+    height:298px;
+    width: 48px;
+    border:1px solid;
+    float: left;
+}
+#tc2{
+    height:298px;
+    width: 47.5px;
+    border:1px solid;
+    float: left;
+}
+#tc3{
+    height:298px;
+    width: 48px;
+    border:1px solid;
+    float: left;
+}
+#bc1{
+    height:298px;
+    width: 48px;
+    border:1px solid;
+    float: left;
+}
+#bc2{
+    height:298px;
+    width: 47.5px;
+    border:1px solid;
+    float: left;
+}
+#bc3{
+    height:298px;
+    width: 48px;
+    border:1px solid;
+    float: left;
+}
+#lc1{
+    height:48px;
+    width:298px;
+    border:1px solid;
+}
+#lc2{
+    height:48px;
+    width:298px;
+    border:1px solid;
+}
+#lc3{
+    height:48px;
+    width: 48px;
+    border:1px solid;
+}
+#rc1{
+    height:48px;
+    width:298px;
+    border:1px solid;
+}
+#rc2{
+    height:48px;
+    width:298px;
+    border:1px solid;
+}
+#rc3{
+    height:48px;
+    width: 48px;
+    border:1px solid;
+}
+#a{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#b{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#c{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#d{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#e{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#f{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#g{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    
+}
+#h{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#i{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#j{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#k{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#l{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#m{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#n{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: yellow;
+}
+#o{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#p{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#q{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#r{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#aa{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#bb{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#cc{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#dd{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#ee{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#ff{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#gg{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#hh{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#ii{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#jj{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#kk{
+    height:48px;
+    width:48px;
+    border:1px solid;
+    background-color: red;
+}
+#ll{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#mm{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#nn{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#oo{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#pp{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#qq{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+#rr{
+    height:48px;
+    width:48px;
+    border:1px solid;
+}
+
+#m1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#n1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#o1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#p1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#q1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#r1{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#m2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#n2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#o2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#p2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#q2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#r2{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: green;
+}
+#m3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#n3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#o3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#p3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#q3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#r3{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#m11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#n11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#o11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#p11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#q11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#r11{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#m12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#n12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#o12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#p12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#q12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#r12{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#m13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#n13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#o13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#p13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#q13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+    background-color: blue;
+}
+#r13{
+    height:48px;
+    width:48px;
+    border:1px solid; 
+    float: left;
+}
+#gw{
+    height:198px;
+    width:198px;
+    border:1px solid; 
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+#yw{
+    height:198px;
+    width:198px;
+    border:1px solid; 
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+#rw{
+    height:198px;
+    width:198px;
+    border:1px solid; 
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+#bw{
+    height:198px;
+    width:198px;
+    border:1px solid; 
+    background-color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+#box1{
+    height: 48px;
+    width: 48px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:20px;
+    float: left;
+}
+#box2{
+    height: 48px;
+    width: 48px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:20px;
+    float: left;
+}
+#box3{
+    height: 48px;
+    width: 48px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:50px;
+    float: left;
+}
+#box4{
+    height: 48px;
+    width: 48px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:50px;
+    float: left;
+}
+#box11{
+    height: 48px;
+    width: 48px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:20px;
+    float: left;
+}
+#box22{
+    height: 48px;
+    width: 48px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:20px;
+    float: left;
+}
+#box33{
+    height: 48px;
+    width: 48px;
+    background-color:yellow;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:50px;
+    float: left;
+}
+#box44{
+    height: 48px;
+    width: 48px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:50px;
+    float: left;
+}
+#box111{
+    height: 48px;
+    width: 48px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:20px;
+    float: left;
+}
+#box222{
+    height: 48px;
+    width: 48px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:20px;
+    float: left;
+}
+#box333{
+    height: 48px;
+    width: 48px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:50px;
+    float: left;
+}
+#box444{
+    height: 48px;
+    width: 48px;
+    background-color:red;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:50px;
+    float: left;
+}
+#box1111{
+    height: 48px;
+    width: 48px;
+    background-color:blue;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:20px;
+    float: left;
+}
+#box2222{
+    height: 48px;
+    width: 48px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:20px;
+    float: left;
+}
+#box3333{
+    height: 48px;
+    width: 48px;
+    background-color:blue;
+    border-radius: 50%;
+    margin-left:30px;
+    margin-top:50px;
+    float: left;
+}
+#box4444{
+    height: 48px;
+    width: 48px;
+    background-color:blue;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top:50px;
+    float: left;
+}
+    </style>
+</head>
+<body>
+    <div id="outer">
+<div id="top">
+    <div id="green">
+        <div id="gw">
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+    </div>
+    <div id="yellowline">
+        <div id="tc1">
+            <div id="a"></div>
+            <div id="b"></div>
+            <div id="c"><img src="star.png"style="height:40px;width:40px;margin-left:5px;"></div>
+            <div id="d"></div>
+            <div id="e"></div>
+            <div id="f"></div>
+        </div>
+        <div id="tc2">
+            <div id="g"><img src="ya.png"style="height:40px;width:40px;margin-left:1px;"></div>
+            <div id="h"></div>
+            <div id="i"></div>
+            <div id="j"></div>
+            <div id="k"></div>
+            <div id="l"></div>
+        </div>
+        <div id="tc2">
+            <div id="m"></div>
+            <div id="n"></div>
+            <div id="o"></div>
+            <div id="p"></div>
+            <div id="q"></div>
+            <div id="r"></div>
+        </div>
+    </div>
+    <div id="yellow">
+        <div id="yw">
+            <div id="box11"></div>
+            <div id="box22"></div>
+            <div id="box33"></div>
+            <div id="box44"></div>
+        </div>
+    </div>
+</div>
+<div id="mid">
+    <div id="greenline">
+        <div id="lc1">
+            <div id="m1"></div>
+            <div id="n1"></div>
+            <div id="o1"></div>
+            <div id="p1"></div>
+            <div id="q1"></div>
+            <div id="r1"></div>
+        </div>
+        <div id="lc2">
+            <div id="m2"><img src="ga.png"style="height:40px;width:40px;margin-left:1px;margin-top:5px;"></div>
+            <div id="n2"></div>
+            <div id="o2"></div>
+            <div id="p2"></div>
+            <div id="q2"></div>
+            <div id="r2"></div>
+        </div>
+        <div id="lc2">
+            <div id="m3"></div>
+            <div id="n3"></div>
+            <div id="o3"><img src="star.png"style="height:40px;width:40px;margin-left:5px;"></div>
+            <div id="p3"></div>
+            <div id="q3"></div>
+            <div id="r3"></div>
+        </div>
+    </div>
+    <div id="trianglebox"></div>
+    <div id="blueline">
+        <div id="rc1">
+            <div id="m11"></div>
+            <div id="n11"></div>
+            <div id="o11"></div>
+            <div id="p11"><img src="star.png"style="height:40px;width:40px;margin-left:5px;"></div>
+            <div id="q11"></div>
+            <div id="r11"></div>
+        </div>
+        <div id="rc2">
+            <div id="m12"></div>
+            <div id="n12"></div>
+            <div id="o12"></div>
+            <div id="p12"></div>
+            <div id="q12"></div>
+            <div id="r12"><img src="ba.png"style="height:40px;width:40px;margin-left:1px;margin-top:5px;"></div>
+        </div>
+        <div id="rc2">
+            <div id="m13"></div>
+            <div id="n13"></div>
+            <div id="o13"></div>
+            <div id="p13"></div>
+            <div id="q13"></div>
+            <div id="r13"></div>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div id="red">
+        <div id="rw">
+            <div id="box111"></div>
+            <div id="box222"></div>
+            <div id="box333"></div>
+            <div id="box444"></div>
+        </div>
+    </div>
+    <div id="redline">
+        <div id="bc1">
+            <div id="aa"></div>
+            <div id="bb"></div>
+            <div id="cc"></div>
+            <div id="dd"></div>
+            <div id="ee"></div>
+            <div id="ff"></div>
+        </div>
+        <div id="bc2">
+            <div id="gg"></div>
+            <div id="hh"></div>
+            <div id="ii"></div>
+            <div id="jj"></div>
+            <div id="kk"></div>
+            <div id="ll"><img src="ra.png"style="height:40px;width:40px;margin-left:1px;"></div>
+        </div>
+        <div id="bc2">
+            <div id="mm"></div>
+            <div id="nn"></div>
+            <div id="oo"></div>
+            <div id="pp"><img src="star.png"style="height:40px;width:40px;margin-left:5px;"></div>
+            <div id="qq"></div>
+            <div id="rr"></div>
+        </div>
+    </div>
+    <div id="blue">
+        <div id="bw">
+            <div id="box1111"></div>
+            <div id="box2222"></div>
+            <div id="box3333"></div>
+            <div id="box4444"></div>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>
